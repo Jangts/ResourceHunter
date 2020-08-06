@@ -100,7 +100,7 @@ function getItemsByRows($) {
                     .filter((s, i) => !!i)
                     .map(s => {
                         s = s.trim()
-                        const matches = s.match(/^([\x00-\xFFÄäÖöÜüẞß]+)([^\x00-\xFFÄäÖöÜüẞß][\s\S]+)$/)
+                        const matches = s.match(/^([\x00-\xFFÄäÖöÜüẞßà]+)([^\x00-\xFFÄäÖöÜüẞßà][\s\S]+)$/)
                         if (matches) {
                             const [m, de, cn] = matches
                             // console.log(de, cn)
