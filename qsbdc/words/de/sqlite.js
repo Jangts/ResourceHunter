@@ -2,7 +2,7 @@ const sqlite3 = require("sqlite3");
 const path = require("path");
 const { createDirIfNotExist } = require("../../../utils/fs");
 
-const datapath = createDirIfNotExist(path.join(__dirname, "../../db"))
+const datapath = createDirIfNotExist(path.join(__dirname, "../../data"))
 const filename = path.join(datapath, "data.db")
 
 const database = new sqlite3.Database(filename, function (err) {
